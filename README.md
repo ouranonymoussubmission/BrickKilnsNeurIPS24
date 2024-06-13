@@ -9,6 +9,7 @@
 * [Dataset](#dataset)
     * [Description](#description)
     * [Convert the pixel coordinates to Geo coordinates](#convert-the-pixel-coordinates-to-geo-coordinates)
+    * [Convert to KML](#convert-to-kml)
 * [License](#license)
 
 ## Abstract
@@ -66,7 +67,7 @@ def x_to_lon(x):
     lon = lon * 180 / np.pi
     return lon
 
-def y_to_lat(y)
+def y_to_lat(y):
     F  = 128 / np.pi * 2 ** 17 # 17 is zoom level
     lat = (2 * np.arctan(np.exp(np.pi - y/F)) - np.pi / 2)
     lat = lat * 180 / np.pi
@@ -92,7 +93,19 @@ df['bbox_latc'] = df['bbox_pixel_yc'].apply(y_to_lat)
 | Zigzag |     86.11 |     26.35 |  86.108394 |  26.349094 |           411 |           654 |          41 |          86 |     0.338290 |
 | Zigzag |     84.26 |     27.05 |  84.260309 |  27.052437 |           588 |           305 |          37 |          76 |     0.295910 |
 
+### Convert to KML
 
+One can convert our data into KML format using the following code. KML file format is useful to visualize the locations of the brick kilns in softwares such as [ArcGIS](https://www.arcgis.com/index.html) and [Google Earth Engine](https://earthengine.google.com/).
+
+```py
+import simplekml
+
+kml = simplekml.Kml()
+for bbox_lonc, bbox_latc in zip(df['bbox_lonc'], df['bbox_latc']):
+    pnt = kml.newpoint()
+    pnt.coords = [(bbox_lonc, bbox_latc)]
+kml.save("/path/bbox.kml")
+```
 
 ## License
 
