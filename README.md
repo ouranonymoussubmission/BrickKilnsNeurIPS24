@@ -1,5 +1,7 @@
 # KilnEye: Large Scale Brick Kiln Detection from Satellite Imagery
 
+* [Abstract](#abstract)
+
 ## Abstract
 Air pollution kills 7 million people annually. The brick manufacturing industry is the second largest consumer of coal, contributing to 8%-14% of air pollution in the Indo-Gangetic plain (a highly populated region in India). Due to the unorganized nature of brick kilns, monitoring their growth on a large scale is challenging. Pollution control boards periodically conduct extensive field surveys to identify non-complying brick kilns, which is a highly time and resource-consuming process. Air quality experts digitally annotate brick kilns using tools such as Google Earth. Previous work has employed computer vision to detect brick kilns from satellite imagery but they do not leverage latest innovations in object detection such as methods with oriented bounding boxes. In this paper, we explore the state-of-the-art object detection models for brick kiln detection using multiple satellite imagery sources. We use the best model among all to build a hand-validated dataset of 23023 brick kilns from 5 states in the Indo-Gangetic plain covering the area of 520k km^2. We demonstrate domain applications such as automatic compliance monitoring and improving pollution inventory for air quality modeling. Our dataset has the potential to be a benchmark dataset for oriented object detection models.
 
