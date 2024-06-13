@@ -10,6 +10,8 @@
     * [Description](#description)
     * [Convert the pixel coordinates to Geo coordinates](#convert-the-pixel-coordinates-to-geo-coordinates)
     * [Convert to KML](#convert-to-kml)
+* [Reproducing the experiments](#reproducing-the-experiments)
+    * [Installation](#installation)
 * [License](#license)
 
 ## Abstract
@@ -106,6 +108,21 @@ for bbox_lonc, bbox_latc in zip(df['bbox_lonc'], df['bbox_latc']):
     pnt.coords = [(bbox_lonc, bbox_latc)]
 kml.save("/path/bbox.kml")
 ```
+
+## Reproducing the experiments
+
+### Installation
+
+* YOLOv8 axis-aligned and Oriented Bounding Box (OBB) variants.
+
+Install the [ultralytics](https://github.com/ultralytics/ultralytics) library:
+```bash
+pip install ultralytics
+```
+
+* YOLOv7 axis-aligned
+
+Use YOLOv7 from the [official repository](https://github.com/WongKinYiu/yolov7).
 
 ## License
 
