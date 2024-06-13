@@ -1,4 +1,6 @@
-![](kilneye.png)
+<div align="center">
+  <img src="kilneye.png" width="40%">
+</div>
 
 # KilnEye: Large Scale Brick Kiln Detection from Satellite Imagery
 
