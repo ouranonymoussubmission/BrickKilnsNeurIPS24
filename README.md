@@ -1,3 +1,5 @@
+![](kilneye.png)
+
 # KilnEye: Large Scale Brick Kiln Detection from Satellite Imagery
 
 * [Abstract](#abstract)
