@@ -130,8 +130,10 @@ Use YOLOv7 from the [official repository](https://github.com/WongKinYiu/yolov7).
 1. Download the Google Maps Static images required for a state or a region using the [download notebook](notebooks/download_brick_kilns_data.ipynb).
 2. One can download the images specific to three regions (Lucknow, Delhi and West Bengal) discussed in the paper by following the file names of labels present in the [regions](regions) directory.
 3. The [regions](regions) directory contains the labels in YOLO format. Class ID for each brick kiln type is as the following: {0: FCBK, 1: Zigzag}.
-4. To train the models from ultralytics (all YOLOv8 variants and YOLOv8-worldv2), please use [this script](scripts/train_ultralytics.sh).
 
+#### [Ultralytics](https://www.ultralytics.com/) models
+* To train the models from [ultralytics](https://www.ultralytics.com/) (all YOLOv8 variants and YOLOv8-worldv2), please use [this script](scripts/train_ultralytics.sh).
+* Evaluate the results using [this notebook](notebooks/yolo_metrics.ipynb).
 
 ## License
 
