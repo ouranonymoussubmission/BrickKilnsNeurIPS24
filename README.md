@@ -7,6 +7,7 @@
 * [Abstract](#abstract)
 * [Terminology](#terminology)
 * [Dataset](#dataset)
+    * [Croissant](#croissant)
     * [Description](#description)
     * [Convert the pixel coordinates to Geo coordinates](#convert-the-pixel-coordinates-to-geo-coordinates)
     * [Convert to KML](#convert-to-kml)
@@ -23,6 +24,12 @@ Air pollution kills 7 million people annually. The brick manufacturing industry 
 * Geo coordinates: (longitude, latitude)
 
 ## Dataset
+
+### Croissant
+
+Our dataset is also uploaded [here](https://huggingface.co/datasets/ouranonymoussubmission/BrickKilnsNeurIPS24) on HuggingFace. The Croissant metadata of our dataset can be directly downloaded from huggingface using the `Croissant` button in `Tags`:
+![image](https://github.com/ouranonymoussubmission/BrickKilnsNeurIPS24/assets/72247818/57db27b2-5f69-46d6-981b-5a8299cd039b)
+
 
 ### Description
 Dataset is saved in the [dataset](dataset) directory with `{state_name}.csv` format. First four columns are given in pixel coordinate system. We do not directly release the geo-coordinates (latitude, longitude) as we want to remain sensitive towards misuse of such a dataset (example: miscreants targeting local communities working at kiln sites; political misuse to drive agenda; theft of bricks; etc.) Thus, on purpose we release the dataset in pixel coordinate format.
