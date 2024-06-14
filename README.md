@@ -127,6 +127,7 @@ Use YOLOv7 from the [official repository](https://github.com/WongKinYiu/yolov7).
 
 ### Process
 
+1. Download the Google Maps Static images required for a state or a region using the [download notebook](notebooks/download_brick_kilns_data.ipynb).
 
 
 
