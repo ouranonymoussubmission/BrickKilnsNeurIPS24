@@ -152,7 +152,8 @@ Use YOLOv7 from the [official repository](https://github.com/WongKinYiu/yolov7).
 * Evaluate: [notebooks/check_metrics.ipynb](notebooks/check_metrics.ipynb)
 
 #### Faster-RCNN
-* Train: 
+* Train (cross-validation): [notebooks/fast_rcnn_kilns_crossval.ipynb](notebooks/fast_rcnn_kilns_crossval.ipynb)
+* Train (out of the region): [notebooks/fast_rcnn_kilns_out_of_region.ipynb](notebooks/fast_rcnn_kilns_out_of_region.ipynb)
 * Evaluate: [notebooks/check_metrics.ipynb](notebooks/check_metrics.ipynb)
 
 
