@@ -134,13 +134,27 @@ Use YOLOv7 from the [official repository](https://github.com/WongKinYiu/yolov7).
 
 ### Process
 
-1. Download the Google Maps Static images required for a state or a region using the [download notebook](notebooks/download_brick_kilns_data.ipynb).
-2. One can download the images specific to three regions (Lucknow, Delhi and West Bengal) discussed in the paper by following the file names of labels present in the [regions](regions) directory.
-3. The [regions](regions) directory contains the labels in YOLO format. Class ID for each brick kiln type is as the following: {0: FCBK, 1: Zigzag}.
+1. Download the Google Maps Static images required for a state or a region using [notebooks/download_brick_kilns_data.ipynb](notebooks/download_brick_kilns_data.ipynb).
+2. Download the Sentinel images using [notebooks/get_images_sentinel.ipynb](notebooks/get_images_sentinel.ipynb).
+3. One can download the images specific to three regions (Lucknow, Delhi and West Bengal) discussed in the paper by following the file names of labels present in the [regions](regions) directory.
+4. The [regions](regions) directory contains the labels in YOLO format. Class ID for each brick kiln type is as the following: {0: FCBK, 1: Zigzag}.
 
 #### [Ultralytics](https://www.ultralytics.com/) (all YOLOv8 variants and YOLOv8-worldv2) models
 * Train: [scripts/train_ultralytics.sh](scripts/train_ultralytics.sh).
 * Evaluate: [notebooks/yolo_metrics.ipynb](notebooks/yolo_metrics.ipynb).
+
+#### YOLOv7
+* Train: Follow the [official repository](https://github.com/WongKinYiu/yolov7)
+* Evaluate: [notebooks/check_metrics.ipynb](notebooks/check_metrics.ipynb)
+
+#### DETA
+* Train: [notebooks/deta.ipynb](notebooks/deta.ipynb)
+* Evaluate: [notebooks/check_metrics.ipynb](notebooks/check_metrics.ipynb)
+
+#### Faster-RCNN
+* Train: 
+* Evaluate: [notebooks/check_metrics.ipynb](notebooks/check_metrics.ipynb)
+
 
 ## License
 
