@@ -4,21 +4,11 @@
 
 # KilnEye: Large Scale Brick Kiln Detection from Satellite Imagery
 
-<!-- Color Changing Button -->
 <p align="center">
   <a href="https://brick-kilns-detector.streamlit.app/" id="colorButton" style="display:inline-block; background-color:#008CBA; color:white; padding:10px 20px; text-align:center; text-decoration:none; font-size:16px; border-radius:5px;">
     👉 Check out the Demo! 👈
   </a>
 </p>
-
-<script>
-  let colors = ['#008CBA', '#f54242', '#42f54b', '#f5e642', '#424ef5'];
-  let i = 0;
-  setInterval(() => {
-    document.getElementById('colorButton').style.backgroundColor = colors[i];
-    i = (i + 1) % colors.length;
-  }, 1000);
-</script>
 
 
 * [Abstract](#abstract)
