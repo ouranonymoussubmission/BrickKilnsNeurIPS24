@@ -44,19 +44,20 @@ Dataset is saved in the [dataset](dataset) directory with `{state_name}.csv` for
 * A raw slice from our dataset looks like the following:
 
 ##### Table 1
-| class | tile_pixel_xc | tile_pixel_yc | bbox_pixel_xc | bbox_pixel_yc | bbox_local_xc | bbox_local_yc | bbox_width | bbox_height | bbox_rotation |
-|:-----:| -------------:| -------------:| -------------:| -------------:| -------------:| -------------:| ----------:| -----------:| -------------:|
-| Zigzag |     24722160 |     14386853 |     24722070 |     14387376 |           470 |          1083 |          41 |          74 |     0.012537 |
-| Zigzag |     24701654 |     14211027 |     24701573 |     14210527 |           479 |            61 |          42 |          76 |     0.655717 |
-| Zigzag |     24812570 |     14318888 |     24812499 |     14319342 |           488 |          1014 |          42 |          71 |     1.444444 |
-| Zigzag |     24803250 |     14229764 |     24803100 |     14229858 |           411 |           654 |          41 |          86 |     0.338290 |
-| Zigzag |     24630817 |     14156731 |     24630846 |     14156476 |           588 |           305 |          37 |          76 |     0.295910 |
+| ENC_ID                                                           | class   |   tile_pixel_xc |   tile_pixel_yc |   bbox_pixel_xc |   bbox_pixel_yc |   bbox_local_xc |   bbox_local_yc |   bbox_width |   bbox_height |   bbox_rotation |
+|:-----------------------------------------------------------------|:--------|----------------:|----------------:|----------------:|----------------:|----------------:|----------------:|-------------:|--------------:|----------------:|
+| bd095abe649e81fc07ca24190ffb8eaa680f6da4957ec6cdbe6850489e4747ff | FCBK    |        24318575 |        14086400 |        24318416 |        14086476 |             401 |             636 |           96 |            43 |            0.64 |
+| bd095abe649e81fc07ca24190ffb8eaa680f6da4957ec6cdbe6850489e4747ff | FCBK    |        24318575 |        14086400 |        24318138 |        14086818 |             123 |             977 |           89 |            44 |            0.56 |
+| cc8e290b2a40a3afa2918aae16478586b2ee2a564f78547c6f3228cda50302aa | Zigzag  |        24591670 |        14207901 |        24591438 |        14207700 |             328 |             359 |           41 |            97 |            0.31 |
+| cc8e290b2a40a3afa2918aae16478586b2ee2a564f78547c6f3228cda50302aa | Zigzag  |        24591670 |        14207901 |        24591858 |        14207561 |             747 |             220 |           47 |            96 |            0.09 |
+| 8591e936f4b1b6e4d25f8f61fedd6e8a753a67c1af143ba59f10824ac4109e80 | Zigzag  |        24493803 |        14252625 |        24494086 |        14252470 |             842 |             405 |           42 |            88 |            0.41 |
 
 * Meaning of each column in the table above and in the converted table we are going to explore now:
 
 ##### Table 2
 | Column name       | Coordinate system      | Range             | Meaning                                                |
 |-------------------|------------------------|-------------------|--------------------------------------------------------|
+| ENC_ID            | -                      | -                 | This ID should be used to access corresponding imagery saved as `{ENC_ID}.png` in [this zip](https://huggingface.co/datasets/ouranonymoussubmission/BrickKilnsNeurIPS24/blob/main/sentinel_encoded.zip).|
 | class             | -                      | {FCBK, Zigzag}    | Type of brick kiln.
 | tile\_pixel\_xc   | pixel coordinate system| -                 | "X" coordinate of center of the tile.                  |
 | tile\_lonc        | Geo coordinate system  | -                 | Longitude of center of the tile.                       |
